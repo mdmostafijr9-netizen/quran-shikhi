@@ -1,0 +1,6 @@
+{
+  "name": "কুরআন শিখি - ছোটদের কুরআন একাডেমি",
+  "description": "ছোটদের আনন্দের সাথে নূরানী কায়দা, সহীহ তাজবীদ, কুরআন ও ইসলামিক শিষ্টাচার শেখার নির্ভরযোগ্য অনলাইন একাডেমি।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
