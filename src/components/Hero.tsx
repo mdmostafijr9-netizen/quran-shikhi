@@ -21,9 +21,9 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute top-36 right-10 w-96 h-96 bg-teal-100/40 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 items-center">
           {/* Left Text Block */}
-          <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
             {/* Clean unboxed metadata kicker */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 text-base sm:text-lg font-bold text-emerald-950">
               <span className="bg-emerald-100 text-emerald-900 px-3.5 py-1 rounded-xl">
@@ -57,7 +57,7 @@ export const Hero: React.FC<HeroProps> = ({
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
               <button
                 onClick={onJumpToCourses}
                 className="w-full sm:w-auto px-7 py-4 text-base sm:text-lg font-bold text-white bg-emerald-600 hover:bg-emerald-700 active:scale-[0.98] rounded-2xl shadow-lg hover:shadow-emerald-200 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer group"
@@ -114,27 +114,33 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           {/* Right Visual Image */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white group">
-              <img
-                src="/src/assets/images/hero_kids_quran_1793806763657.jpg"
-                alt="ছোটরা হাসিমুখে কুরআন ও আরবি হরফ শিখছে - কুরআন শিখি একাডেমি"
-                referrerPolicy="no-referrer"
-                className="w-full h-auto aspect-[16/10] sm:aspect-[4/3] object-cover group-hover:scale-102 transition-transform duration-500"
-              />
-              {/* Overlay Badge */}
-              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-2xl p-4 border border-slate-200 shadow-lg flex items-center justify-between">
-                <div className="flex items-center gap-3.5">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-2xl shadow-xs">
+              <div className="w-full aspect-video bg-emerald-50/40 overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/vgmdtwb8/image/upload/v1795623151/WhatsApp_Image_2026-11-25_at_10.09.50_PM.jpg"
+                  alt="শিশুদের প্রিয় কারিকুলাম - গেম ও ভিজ্যুয়াল মেথডে কুরআন শিখি"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-500"
+                />
+              </div>
+              {/* Theme Caption Bar Below Image (Uncropped & Non-overlapping) */}
+              <div className="bg-white p-4 sm:p-5 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl sm:text-2xl shadow-xs shrink-0">
                     🌟
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-slate-600 uppercase tracking-wide">শিশুদের প্রিয় কারিকুলাম</p>
-                    <p className="text-lg sm:text-xl font-extrabold text-slate-900 font-display">গেম ও ভিজ্যুয়াল মেথডে পাঠদান</p>
+                    <p className="text-xs sm:text-sm font-bold text-emerald-800 tracking-wide">
+                      শিশুদের প্রিয় কারিকুলাম
+                    </p>
+                    <p className="text-base sm:text-lg font-extrabold text-slate-900 font-display leading-snug">
+                      গেম ও ভিজ্যুয়াল মেথডে পাঠদান
+                    </p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className="text-sm sm:text-base font-extrabold text-emerald-900 bg-emerald-100 px-3.5 py-1.5 rounded-xl whitespace-nowrap">
+                  <span className="text-xs sm:text-sm font-extrabold text-emerald-900 bg-emerald-100 px-3.5 py-1.5 rounded-xl whitespace-nowrap">
                     ওয়ান টু ওয়ান লাইভ
                   </span>
                 </div>
